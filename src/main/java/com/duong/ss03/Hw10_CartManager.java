@@ -11,6 +11,8 @@ public class Hw10_CartManager {
         productHw10s.add(new Product_Hw10(1,"laptop",1000));
         productHw10s.add(new Product_Hw10(2,"iphone",500));
         productHw10s.add(new Product_Hw10(3,"mouse",200));
+
+
     }
     public static void addProduct(Product_Hw10 p){
         carts.add(p);

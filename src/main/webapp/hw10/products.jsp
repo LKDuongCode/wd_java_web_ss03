@@ -7,12 +7,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
-<h2>carts</h2>
+
+<h2>products list</h2>
 <table border="1">
     <tr>
         <th>Name </th>
@@ -20,10 +22,11 @@
         <th>Action</th>
     </tr>
         <%
-        List<Product_Hw10> products = (List<Product_Hw10>) application.getAttribute("carts");
+        List<Product_Hw10> products = (List<Product_Hw10>) application.getAttribute("products_hw10");
         if (products != null && !products.isEmpty()) {
             for (Product_Hw10 p : products) {
     %>
+
     <tr>
         <td><%= p.getName() %></td>
         <td><%= p.getPrice() %></td>
@@ -41,10 +44,12 @@
     } else {
     %>
     <tr>
-        <td colspan="3">Chưa có user nào </td>
+        <td colspan="3">Chưa có product nào </td>
     </tr>
         <%
         }
     %>
+
+    <a href="carts.jsp">go to the carts</a>
 </body>
 </html>
