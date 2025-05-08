@@ -17,8 +17,8 @@
     <a href="hw06.jsp">homework06</a>
     <a href="order">homework07</a>
     <a href="book-servlet">homework08</a>
-    <a href="order">homework09</a>
-    <a href="order">homework10</a>
+    <a href="user-servlet">homework09</a>
+    <a href="products-servlet">homework10</a>
 </div>
 </body>
 </html>
